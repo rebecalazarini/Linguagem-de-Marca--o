@@ -1,0 +1,146 @@
+<!-- //FORMULARIO DE CADASTRO DE ALUNOS COM TABELA -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="formulario de media1.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ae00ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #459da0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <form id="studentForm">
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" name="nota1" min="0" max="100" required><br><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" name="nota2" min="0" max="100" required><br><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" name="nota3" min="0" max="100" required><br><br>
+
+        <button type="button" onclick="cadastrarAluno()">Cadastrar</button>
+    </form>
+
+    <h2>Lista de Alunos</h2>
+    <table id="studentTable" borde="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Média</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lista de alunos será inserida aqui -->
+        </tbody>
+    </table>
+
+    <script src="formulario de media1.js"></script>
+    <script>
+        function calcularMedia(nota1, nota2, nota3) {
+    return (nota1 + nota2 + nota3) / 3;
+}
+
+function determinarSituacao(media) {
+    if (media >= 95) {
+        return 'Aluno Ouro';
+    } else if (media >= 85) {
+        return 'Aluno Prata';
+    } else if (media >= 75) {
+        return 'Aluno Bronze';
+    } else if (media < 50) {
+        return 'Aluno Retido';
+    } else {
+        return 'Aprovado';
+    }
+}
+
+function cadastrarAluno() {
+    const nome = (document.getElementById('nome').value);
+    const nota1 = parseFloat(document.getElementById('nota1').value);
+    const nota2 = parseFloat(document.getElementById('nota2').value);
+    const nota3 = parseFloat(document.getElementById('nota3').value);
+
+    const media = calcularMedia(nota1, nota2, nota3).toFixed(2);
+    const situacao = determinarSituacao(media);
+
+    const tabela = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+    const novaLinha = tabela.insertRow();
+
+    const celulaNome = novaLinha.insertCell(0);
+    const celulaNota1 = novaLinha.insertCell(1);
+    const celulaNota2 = novaLinha.insertCell(2);
+    const celulaNota3 = novaLinha.insertCell(3);
+    const celulaMedia = novaLinha.insertCell(4);
+    const celulaSituacao = novaLinha.insertCell(5);
+
+    celulaNome.innerText = nome;
+    celulaNota1.innerText = nota1;
+    celulaNota2.innerText = nota2;
+    celulaNota3.innerText = nota3;
+    celulaMedia.innerText = media;
+    celulaSituacao.innerText = situacao;
+
+    document.getElementById('studentForm').reset();
+}
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(245, 197, 245);
+}
+
+header{
+    background: rgb(233, 85, 110);
+    padding: 1vw;
+
+    & .c1 h1{
+        color: white;
+        font-size: 2vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .c2{
+        padding: 5vw;
+        border: 1px solid rgb(0, 0, 0);
+        width: 11vw;
+        margin-top: 5vw;
+        border-radius: 0.5vw;
+        box-shadow: 1px 1px 1px rgb(241, 113, 134);
+
+        & .h1{
+            font-size: 1.5vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        & input{
+            width: 10vw;
+            padding: 0.5vw;
+            border-radius: 0.5vw;
+            border: none;
+            margin-top: 1vw;
+        }
+
+        & button{
+            width: 11vw;
+            padding: 0.5vw;
+            margin-top: 1vw;
+            background: pink;
+            border: none;
+            border-radius: 0.5vw;
+            font-size: 1.0vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        & button:hover{
+            width: 11vw;
+            padding: 0.5vw;
+            margin-top: 1vw;
+            background: rgb(241, 125, 145);
+            border: none;
+            border-radius: 0.5vw;
+            font-size: 1.0vw;
+            font-family: URW Chancery L, cursive;
+        }
+    }
+}
+
+#resultado h1{
+    font-size: 1vw;
+    font-family: Snell Roundhand, cursive;
+    margin-top: 1vw;
+}

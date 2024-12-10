@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer02</title>
+</head>
+<body>
+    <form>
+    
+    <h1>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h1>
+    <p></p>
+
+    <b><label for="login">login</label></b>
+    <input type="text" id="login"required/>
+    
+
+    <br>
+    <br>
+
+    <b><label for="senha">Senha</label></b>
+    <input type="senha" id="senha"required/>
+
+    <br>
+    <br>
+
+    <b><label for="status">Status</label></b>
+     <select id="status">
+     <option>Inativo</option>
+     <option>Ativo</option>
+    </select>
+
+    <p></p>
+
+    
+    
+    <b><legend>Tipo
+
+        <input type="radio" id="tec" name="Tipo">
+        <label for="tec">Técnco</label>
+    
+        <input type="radio" id="prof" name="Tipo">
+        <label for="prof">Professor</label>
+    
+        <input type="radio" id="aluno" name="Tipo">
+        <label for="aluno">Aluno</label>
+        </legend></b>
+
+        <p></p>
+
+        <b><label for="datacriacao">Data Criação</label></b>
+        <input type="datetime" name="datacriacao" id="datacriacao">
+
+        <p></p>
+
+        <b><legend>Perfil
+
+            <input type="radio" id="convidado" name="Perfil">
+            <label for="convidado">Convidado</label>
+        
+            <input type="radio" id="Administrador" name="Perfil">
+            <label for="Administrador">Administrador</label>
+            </legend></b>
+
+        <p></p>
+
+        
+        <b><label for="obs">Observações</label></b>
+        <textarea id="info"></textarea>
+
+        <p></p>
+
+        
+        <b><label for="mo">Módulos</label></b>
+    
+            <input type="checkbox" id="compras"/>
+            <label for="compras">Compras</label>
+    
+            <input type="checkbox" id="biblioteca"/>
+            <label for="biblioeca">Biblioteca</label>
+    
+            <input type="checkbox" id="academico"/>
+            <label for="academico">Acadêmico</label>
+            <br>
+            <input type="checkbox" id="do"/>
+            <label for="do">Documentação</label>
+    
+            <input type="checkbox" id="rh"/>
+            <label for="rh">Recursos Humanos</label>
+
+            <p></p>
+    
+    <input type="submit" value="Cadastrar">
+    <input type="reset" value="Excluir">
+
+    <style>
+    body{
+        background: #70d9f3;
+    }
+    input{
+    width: 9%;
+    height: 100%;
+    border-radius: 1px;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+    }
+
+    </style>
+
+
+</form>
+
+
+</body>
+</html>

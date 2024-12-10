@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    background: rgb(253, 251, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+    & .div1 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(184, 16, 16);
+        border-radius: 200px ;
+}
+    
+    & .div2 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(231, 226, 226);
+        border-radius: 200px;
+    }
+    
+    & .div3 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(71, 44, 170);
+        border-radius: 200px ;
+    }
+
+
+    & .div4 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(30, 175, 91);
+        border-radius: 200px ;
+    
+    }
+
+    & .div5{
+        width: 5vw;
+        height: 10vh;
+        background: rgb(192, 57, 98);
+        border-radius: 200px ;
+    
+    }
+
+    & .div6{
+        width: 5vw;
+        height: 10vh;
+        background: rgb(172, 135, 35);
+        border-radius: 200px ;
+    
+    }
+
+    
+    & .div7{
+        width: 5vw;
+        height: 10vh;
+        background: rgb(228, 213, 9);
+        border-radius: 200px ;
+    
+    }
+
+    & .div8 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(207, 85, 29);
+        border-radius: 200px ;
+    
+    }
+
+    & .div9{
+        width: 5vw;
+        height: 10vh;
+        background: rgb(138, 122, 122);
+        border-radius: 200px ;
+    
+    }
+
+    & .div10 {
+        width: 5vw;
+        height: 10vh;
+        background: rgb(39, 228, 253);
+        border-radius: 200px ;
+    
+}
+    }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+}
+
+.containerheader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    & .containerLogo {
+        width: 40%;
+        background: rgb(20, 67, 167);
+    }
+
+    & .containerLogo img {
+        width: 250px;
+    }
+
+    & .containerMenu {
+        width: 60%;
+        background: rgb(101, 168, 230);
+    }
+
+    & .containerMenu nav{
+        background: rgb(101, 168, 230);
+        padding: 15px;
+    }
+
+    & .containerMenu nav a {
+        color: white;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+    & .containerMenu nav a:hover {
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
+        background: black;
+        border-radius: 16px;
+
+}
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    & .containerBanner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    & .containerBanner img{
+        width: 70%;
+        border-radius: 16px;
+        box-shadow: 8px 8px 5px;
+    }
+
+    & .containerBanner img:hover{
+        width: 80%;
+        transition: 2.0s;
+        border-radius: 16px;
+        box-shadow:  8px 8px 5px;
+    }
+    & .containerimagem{
+        width: 100%;
+        padding-right: 10%;
+        justify-content: center;
+        display: flex;
+        margin-top: 100px;
+    }
+    & .containerdiv{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 5%;
+        width: 60%;
+    }
+
+}
+
+    </style>
+    
+    <header>
+
+        <!-- DIV => São containers -->
+     <div class="containerheader">
+
+        <div class="containerLogo">
+            <img src="senailogo.png">
+
+        </div>
+
+        <div class="containerMenu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contato.html">Contato</a>
+                <a href="quemsomos">Quem somos</a>
+            </nav>
+
+        </div>
+
+     </div>
+
+    </header>
+
+    <main>
+
+        <div class="containerBanner">
+            <img src="a1.jpg" alt="Banner">
+        </div>
+
+        <div class="containerdiv">
+            <div class="divtexto">
+                <span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> 
+                    Accusantium ipsam eveniet cumque! Vitae, sint? Ea sapiente suscipit veritatis <br>
+                    repudiandae dolorem vel quam obcaecati perferendis sint eos, omnis <br>
+                    adipisci labore hic.
+                </span>
+            </div>
+        </div>
+        
+
+        <div class="containerimagem">
+            <nav>
+            <img src="2h.png" alt="imagem">
+        </nav>
+        </div>
+
+    </main>
+
+    
+</body>
+</html>
